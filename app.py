@@ -12,3 +12,12 @@ if st.button("Click Me"):
 name = st.text_input("Enter your name")
 if name:
     st.write(f"Hello, {name}! 👋")
+
+
+st.subheader("🔢 Square a Number")
+
+num = st.number_input("Enter a number", min_value=0.0, format="%.2f")
+
+if st.button("Calculate Square"):
+    st.success(f"The square of {num} is {num ** 2}")
+
