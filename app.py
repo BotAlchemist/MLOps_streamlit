@@ -7,3 +7,8 @@ st.write("This is a minimal app to demonstrate GitHub Actions CI integration.")
 
 if st.button("Click Me"):
     st.success("🎉 Button clicked! CI is working!")
+
+# New feature: user input
+name = st.text_input("Enter your name")
+if name:
+    st.write(f"Hello, {name}! 👋")
