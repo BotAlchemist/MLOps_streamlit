@@ -21,3 +21,14 @@ num = st.number_input("Enter a number", min_value=0.0, format="%.2f")
 if st.button("Calculate Square"):
     st.success(f"The square of {num} is {num ** 2}")
 
+
+import datetime
+
+st.subheader("🕒 Show Current Date and Time")
+
+if st.button("Show Date & Time"):
+    now = datetime.datetime.now()
+    st.info(f"🗓️ Today is {now.strftime('%A, %d %B %Y')}")
+    st.info(f"⏰ Current time: {now.strftime('%I:%M:%S %p')}")
+
+
